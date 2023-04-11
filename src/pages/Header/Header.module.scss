@@ -1,0 +1,14 @@
+.header {
+   display: flex;
+   justify-content: flex-end;
+   flex: 0 0 auto;
+   &:global > div {
+      cursor: pointer;
+   }
+   &:global > div.active > div {
+      border: 1px solid #e2e3e5;
+   }
+   &:global > div.active > div > svg > path {
+      stroke: #5d5fef;
+   }
+}
